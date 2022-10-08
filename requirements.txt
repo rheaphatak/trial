@@ -1,3 +1,4 @@
 Cmake
-tesseract-ocr
+leptonica
 pytesseract
+tesseract-ocr
