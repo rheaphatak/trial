@@ -1,4 +1,4 @@
-
+'''
 from PIL import Image
 from pytesseract import pytesseract
 
@@ -9,7 +9,7 @@ import numpy as np
 import re
 import pytesseract
 from pytesseract import Output
-
+'''
 import streamlit as st
 
 st.title('Hi pls work!')
