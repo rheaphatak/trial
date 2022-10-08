@@ -1,2 +1,3 @@
-#tesseract-ocr
-#pytesseract
+Cmake
+tesseract-ocr
+pytesseract
