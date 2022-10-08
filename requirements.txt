@@ -1,5 +1,2 @@
-tesseract-ocr
-tesseract-ocr-eng
-tesseract-ocr-osd
-Pillow-9.2.0
-pytesseract-0.3.10
+!sudo apt install tesseract-ocr
+!pip install pytesseracttesseract-ocr
