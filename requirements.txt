@@ -1,4 +1,5 @@
 Cmake
+libtesseract-dev
 leptonica
 pytesseract
 tesseract-ocr
