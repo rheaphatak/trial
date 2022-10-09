@@ -21,9 +21,9 @@ if uploaded_file is not None:
     st.image(image)
     st.write('HEYY:')
     st.write(uploaded_file.name)
-    #img = cv2.imread(uploaded_file.name)
+    img = cv2.imread(image)
 
-    d = pytesseract.image_to_data(image, output_type=Output.DICT)
+    d = pytesseract.image_to_data(img, output_type=Output.DICT)
 
 
     conversation =''
@@ -31,7 +31,7 @@ if uploaded_file is not None:
     for i in range(n_boxes):
         conversation += d['text'][i] + " "
         (x, y, w, h) = (d['left'][i], d['top'][i], d['width'][i], d['height'][i])
-        cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
+        cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
     st.write("conversation:" + conversation)
     #cv2.imshow(img)
