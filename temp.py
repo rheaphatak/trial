@@ -36,4 +36,3 @@ if uploaded_file is not None:
     st.write("conversation:" + conversation)
     #cv2.imshow(img)
     cv2.waitKey(0)
-    '''
