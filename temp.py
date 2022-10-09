@@ -18,10 +18,10 @@ st.title('Hi pls work!')
 
 uploaded_file = st.file_uploader("Choose a file")
 
+'''
 if uploaded_file is not None:
     st.image(uploaded_file.name)
 
-'''
 if uploaded_file is not None:
     img = cv2.imread(uploaded_file.name)
 
