@@ -35,7 +35,7 @@ if uploaded_file is not None:
     for i in range(n_boxes):
         #st.write('word: ' + d['text'][i] + '\n')
         conversation += d['text'][i] + " "
-        if ((d['text'][i][-1]) != ''):
+        if ((d['text'][i]) != ''):
             if ((d['text'][i][-1] == '.') | (d['text'][i][-1] == '!') | (d['text'][i][-1] == '?')):
                 coversation += '\n'
         (x, y, w, h) = (d['left'][i], d['top'][i], d['width'][i], d['height'][i])
