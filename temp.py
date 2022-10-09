@@ -1,6 +1,8 @@
 from PIL import Image
 #from pytesseract import pytesseract
 
+
+import numpy as np
 import cv2
 import re
 import pytesseract
@@ -21,8 +23,8 @@ if uploaded_file is not None:
     st.image(image)
     st.write('HEYY:')
     st.write(uploaded_file.name)
-    img = cv2.imread(uploaded_file)
-
+    #img = cv2.imread(uploaded_file)
+    img = np.array(image)
     d = pytesseract.image_to_data(img, output_type=Output.DICT)
 
 
