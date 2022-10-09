@@ -11,7 +11,7 @@ from pytesseract import Output
 
 import streamlit as st
 
-st.title('Cartoon to words')
+st.title('Get in Line')
 
 
 
