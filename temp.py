@@ -37,5 +37,6 @@ if uploaded_file is not None:
         cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
     st.write("conversation:" + conversation)
+    st.image(img)
     #cv2.imshow(img)
     cv2.waitKey(0)
