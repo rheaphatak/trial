@@ -1,2 +1,2 @@
-#pillow>=8.0.0
-#pytesseract==0.3.10
+pillow>=8.0.0
+pytesseract==0.3.10
