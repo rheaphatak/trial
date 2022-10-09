@@ -33,7 +33,7 @@ if uploaded_file is not None:
     conversation =''
     n_boxes = len(d['level'])
     for i in range(n_boxes):
-        st.write('word: ' + d['text'][i] + \n)
+        st.write('word: ' + d['text'][i] + '\n')
         conversation += d['text'][i] + " "
         #if ((d['text'][i][-1] == '.') | (d['text'][i][-1] == '!') | (d['text'][i][-1] == '?')):
             #coversation += '\n'
