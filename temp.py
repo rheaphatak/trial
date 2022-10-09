@@ -17,8 +17,8 @@ uploaded_file = st.file_uploader("Choose a file")
 
 
 if uploaded_file is not None:
-    image = image = Image.open(uploaded_file)
-    st.image(uploaded_file.name)
+    image = Image.open(uploaded_file)
+    st.image(image)
 '''
 if uploaded_file is not None:
     img = cv2.imread(uploaded_file.name)
