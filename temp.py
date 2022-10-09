@@ -11,11 +11,11 @@ from pytesseract import Output
 
 import streamlit as st
 
-st.title('Hi pls work!')
+st.title('Cartoon to words')
 
 
 
-uploaded_file = st.file_uploader("Choose a file")
+uploaded_file = st.file_uploader("Please choose an image file")
 
 
 if uploaded_file is not None:
