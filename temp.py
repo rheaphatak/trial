@@ -1,12 +1,12 @@
 #from PIL import Image
 #from pytesseract import pytesseract
 
-import cv2
-from matplotlib import pyplot as plt
-import numpy as np
-import re
-import pytesseract
-from pytesseract import Output
+#import cv2
+#from matplotlib import pyplot as plt
+#import numpy as np
+#import re
+#import pytesseract
+#from pytesseract import Output
 
 
 import streamlit as st
@@ -15,7 +15,7 @@ st.title('Hi pls work!')
 
 
 
-uploaded_file = st.file_uploader("Choose a file")
+#uploaded_file = st.file_uploader("Choose a file")
 
 '''
 if uploaded_file is not None:
