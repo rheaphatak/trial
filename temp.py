@@ -21,7 +21,7 @@ if uploaded_file is not None:
     st.image(image)
     st.write('HEYY:')
     st.write(uploaded_file.name)
-    img = cv2.imread(uploaded_file.name)
+    img = cv2.imread(uploaded_file)
 
     d = pytesseract.image_to_data(img, output_type=Output.DICT)
 
