@@ -37,7 +37,7 @@ if uploaded_file is not None:
         conversation += d['text'][i] + " "
         if ((d['text'][i]) != ''):
             if ((d['text'][i][-1] == '.') | (d['text'][i][-1] == '!') | (d['text'][i][-1] == '?')):
-                coversation += '\n'
+                conversation += '\n'
         (x, y, w, h) = (d['left'][i], d['top'][i], d['width'][i], d['height'][i])
         cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
