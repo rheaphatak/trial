@@ -20,7 +20,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
     st.image(image)
     st.write('HEYY:')
-    st.write(uploaded_file.name + uploaded_file.type)
+    st.write(uploaded_file.name)
     '''
     img = cv2.imread(uploaded_file.name + uploaded_file.type)
 
