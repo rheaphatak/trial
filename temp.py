@@ -2,8 +2,6 @@
 #from pytesseract import pytesseract
 
 import cv2
-from matplotlib import pyplot as plt
-import numpy as np
 import re
 import pytesseract
 from pytesseract import Output
