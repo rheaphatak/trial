@@ -24,6 +24,8 @@ if uploaded_file is not None:
     st.write('HEYY:')
     st.write(uploaded_file.name)
     #img = cv2.imread(uploaded_file)
+    saved_img = image.save(uploaded_file.name)
+    img = cv2.imread(uploaded_file.name)
     img = np.array(image)
     d = pytesseract.image_to_data(img, output_type=Output.DICT)
 
