@@ -1,4 +1,4 @@
-#from PIL import Image
+from PIL import Image
 #from pytesseract import pytesseract
 
 import cv2
@@ -17,6 +17,7 @@ uploaded_file = st.file_uploader("Choose a file")
 
 
 if uploaded_file is not None:
+    image = image = Image.open(uploaded_file)
     st.image(uploaded_file.name)
 '''
 if uploaded_file is not None:
