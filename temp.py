@@ -19,6 +19,9 @@ uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
     st.image(image)
+    st.write('HEYY:')
+    st.write(uploaded_file.name + uploaded_file.type)
+    '''
     img = cv2.imread(uploaded_file.name + uploaded_file.type)
 
     d = pytesseract.image_to_data(img, output_type=Output.DICT)
@@ -34,3 +37,4 @@ if uploaded_file is not None:
     st.write("conversation:" + conversation)
     #cv2.imshow(img)
     cv2.waitKey(0)
+    '''
